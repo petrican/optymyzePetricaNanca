@@ -49,11 +49,24 @@ var resetData = function() {
     };
 }
 
+var firstForm     = document.getElementById('modal-form-section-one');
+var secondForm    = document.getElementById('modal-form-section-two');
+var showSubmitted = document.getElementById('show-submitted-data');
+
+/**
+ * Fields
+ */
+var titleField   = document.getElementById('title-anouncement');
+var brandField   = document.getElementById('mark-brand');
+var yearField    = document.getElementById('year');
+var mileageField = document.getElementById('mileage');
+var fuelField    = document.getElementById('fuel');
+var colorField   = document.getElementById('color');
+
 // Populate year
-var yearSelect = document.getElementById('year');
 var yearNow = parseInt((new Date()).getFullYear());
 for (var i=yearNow; i>= 1900; i--) {
-    yearSelect.options[yearSelect.options.length] = new Option(i, i);
+    yearField.options[yearField.options.length] = new Option(i, i);
 }
 
 
@@ -85,10 +98,22 @@ var updateColor = function(colorField) {
     console.log(colorField.value);
 };
 
+
+/**
+ *  Validate first form
+ */
+
+
+/**
+ * Validate second form
+ */
+
+
+
+
+
 var renderSecondForm = function() {
-    console.log('Here');
-    var firstForm  = document.getElementById('modal-form-section-one');
-    var secondForm = document.getElementById('modal-form-section-two');
+    //validate first form
     firstForm.classList.add('hidden');
     secondForm.classList.remove('hidden');
 };
@@ -99,8 +124,23 @@ var initialSetup = function() {
     var titleField = document.getElementById('modal-form-section-one');
 }
 
+/**
+ * Complete submission
+ */
+var completeSubmission = function() {
+   // validate second form
+   var collectedData = JSON.stringify(dataHolder);
+   showSubmitted.innerHTML = '<br /> Collected Data => <br />' + collectedData;
+   firstForm.classList.add('hidden');
+   secondForm.classList.add('hidden');
+   showSubmitted.classList.remove('hidden');
+}
 
-// get overlay
+
+
+/**
+ * Basic Modal actions
+ */
 var overlay = document.getElementById('overlay');
 
 var openModal = function () {

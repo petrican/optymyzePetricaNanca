@@ -93,11 +93,58 @@
         </form>
 
         <form id="modal-form-section-two" class="hidden">
+            <!-- damaged Y/N -->
+            <div class="field-wrapper">
+                <span class="to-left">Vehicle Damaged:</span>
+                <div class="to-left">
+                    <label><input class="fuel" type="radio" name="damaged" value="No" checked="checked" tabindex="8" />No</label>
+                    <label><input class="fuel" type="radio" name="damaged" value="Yes" tabindex="9" />Yes</label>
+                </div>
+            </div>
+            <div class="modal-clearfix"></div>
 
 
+            <div class="field-wrapper" id="damage-details-box" class="hidden">
+                <span class="to-left">Damage Details:</span><br />
+                <div class="to-left full-width">
+                    <textarea id="damage-details" name="damage-details"></textarea>
+                </div>
+            </div>
+            <div class="modal-clearfix"></div>
+
+
+            <!-- price -->
+            <div class="field-wrapper">
+                <label for="price">
+                    Price:
+                    <input class="form-item" type="text" id="price" name="price" tabindex="11">
+                </label>
+            </div>
+            <div class="modal-clearfix"></div>
+
+
+            <!-- currency -->
+            <div class="field-wrapper">
+                <label for="currency">
+                    Currency: <br />
+                    <select class="form-item" id="currency" name="currency" onChange="setCurrency(this)" tabindex="12">
+                        <option value="EUR">EURO</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="modal-clearfix"></div>
+            <div class="field-wrapper">
+              <input class="green-button to-right" type="button" value="Submit" tabindex="13" onClick="completeSubmission()">
+              <input class="gray-button to-right r-offset" type="button" value="Cancel" tabindex="14" onClick="cancelSubmission()">
+            </div>
         </form>
+
         <div class="modal-clearfix"></div>
 
+        <div id="show-submitted-data" class="hidden">
+        </div>
 	</div>
 </div>
 

@@ -68,11 +68,22 @@ body {
 
 .modal-content {
 	padding: 20px 30px;
-	width: 600px;
+	width: 50%;
 	position: relative;
 	min-height: 300px;
 	margin: 5% auto 0;
 	background: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .modal-content {
+        padding: 20px 30px;
+        width: 90%;
+        position: relative;
+        min-height: 200px;
+        margin: 5% auto 0;
+        background: #fff;
+    }
 }
 
 /* Demo Styles */
@@ -157,6 +168,7 @@ body {
 /* general errors */
 .modal-messages {
     padding: 5px 0px;
+    color: red;
 }
 
 .form-item {
@@ -165,6 +177,12 @@ body {
 }
 input, label {
     display:block;
+}
+
+.dmg {
+    font-size: 14px;
+    width: 40px;
+    float: left;
 }
 
 .field-wrapper {
@@ -245,9 +263,15 @@ input, label {
 .hidden {
     display: none;
 }
-#damage-details {
+.wide-textarea {
     width: 100%;
+    padding: 15px;
 }
 .r-offset {
     margin-right: 10px;
+}
+
+.data-results {
+    word-wrap: break-word;
+    color: green;
 }

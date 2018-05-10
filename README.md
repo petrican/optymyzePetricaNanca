@@ -42,19 +42,29 @@
      
   The modal has also have areas where to display warning/error and help messages. 
 
-  Note the following points: 
+ # Note the following points: 
+  
 ●  Demo for modal window written only with HTML, CSS, JavaScript
+
 ●  No preprocessors, libraries or frameworks (SASS, LESS, underscore, lodash, jQuery, Angular, React, Vue etc) used here. 
+
 ●  No HTML5 form elements used or validations 
+
 ●  It is cross-browser compatible with modern browsers
+
 
   Other features: 
 
+
 ●  Validation  for  all  fields  (according  to  their  nature)  by  marking  the  appearance  for 
 valid/invalid fields 
+
  
 ●  Mileage Field – validated if it is number when the field is completed 
+
  
 ●  Make/Brand  Field  –  when  selecting  a  make/brand,  its  logo appears on the page 
+
  
 ●  Color Field – when filled in, a square representing the graphic color appears 
+

@@ -1,6 +1,8 @@
 
   ## Modal example and usage with VanillaJS
-     
+  
+  DEMO => https://petrican.github.io/optymyzePetricaNanca/
+  
   This demo creates a modal window that will open” on page” according to the specifications below: 
      
     Modal’s Content 
@@ -68,3 +70,4 @@ valid/invalid fields
  
 ●  Color Field – when filled in, a square representing the graphic color appears 
 
+Enjoy!

@@ -42,7 +42,7 @@
      
   The modal has also have areas where to display warning/error and help messages. 
 
- # Note the following points: 
+ ### Note the following points: 
   
 ●  Demo for modal window written only with HTML, CSS, JavaScript
 
